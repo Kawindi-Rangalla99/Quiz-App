@@ -1,6 +1,6 @@
 export const Questions = [
     {
-      prompt: "Which of the following is NOT a type of operating system?",
+      prompt: "Identify the option that is NOT a type of operating system.",
       optionA: "Real-time OS",
       optionB: "Multi-user OS",
       optionC: "Single-tasking OS",
@@ -8,7 +8,7 @@ export const Questions = [
       answer: "C",
     },
     {
-      prompt: "Which operating system is developed by Microsoft?",
+      prompt: "What operating system is developed by Microsoft?",
       optionA: "Linux",
       optionB: "macOS",
       optionC: "Windows",
@@ -16,15 +16,15 @@ export const Questions = [
       answer: "C",
     },
     {
-      prompt: "What is the main purpose of an operating system?",
-      optionA: "To manage resources and provide services for software",
-      optionB: "To increase the speed of the CPU",
-      optionC: "To serve as the hardware",
-      optionD: "To provide network access",
-      answer: "A",
+      prompt: "Name the OS commonly used for mobile devices.",
+      optionA: "Windows",
+      optionB: "macOS",
+      optionC: "Android",
+      optionD: "Linux",
+      answer: "C",
     },
     {
-      prompt: "Which of the following is an open-source operating system?",
+      prompt: "Identify the open-source operating system.",
       optionA: "Windows",
       optionB: "Linux",
       optionC: "iOS",
@@ -32,7 +32,7 @@ export const Questions = [
       answer: "B",
     },
     {
-      prompt: "Which component of the OS is responsible for managing files?",
+      prompt: "What component of the OS manages files?",
       optionA: "File System",
       optionB: "Kernel",
       optionC: "Shell",
@@ -40,7 +40,7 @@ export const Questions = [
       answer: "A",
     },
     {
-      prompt: "In UNIX, what is the command to list files in a directory?",
+      prompt: "In UNIX, what command lists files in a directory?",
       optionA: "ls",
       optionB: "dir",
       optionC: "list",
@@ -48,7 +48,7 @@ export const Questions = [
       answer: "A",
     },
     {
-      prompt: "What is the core of an operating system?",
+      prompt: "What is the core of an operating system called?",
       optionA: "Kernel",
       optionB: "Shell",
       optionC: "Command Line Interface",
@@ -56,7 +56,7 @@ export const Questions = [
       answer: "A",
     },
     {
-      prompt: "Which OS is known for its use in servers and mainframes?",
+      prompt: "Which OS is popular for servers and mainframes?",
       optionA: "macOS",
       optionB: "Linux",
       optionC: "Android",
@@ -64,7 +64,7 @@ export const Questions = [
       answer: "B",
     },
     {
-      prompt: "Which scheduling algorithm is used by most operating systems for multitasking?",
+      prompt: "What scheduling algorithm do most operating systems use for multitasking?",
       optionA: "Round Robin",
       optionB: "FIFO",
       optionC: "Shortest Job First",
@@ -72,12 +72,12 @@ export const Questions = [
       answer: "A",
     },
     {
-      prompt: "What does the acronym GUI stand for?",
-      optionA: "Graphical User Interface",
-      optionB: "General User Interface",
-      optionC: "Guided User Input",
-      optionD: "Global User Interface",
-      answer: "A",
+      prompt: "What command is used to shut down a Windows computer?",
+      optionA: "exit",
+      optionB: "shutdown",
+      optionC: "stop",
+      optionD: "close",
+      answer: "B",
     },
   ];
   

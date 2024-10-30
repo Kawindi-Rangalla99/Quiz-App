@@ -12,7 +12,7 @@ function Quiz() {
       setScore(score + 1);
     }
     setCurrQuestion(currQuestion + 1);
-    setOptionChosen(""); // Reset chosen option for the next question
+    setOptionChosen(""); 
   };
 
   const finishQuiz = () => {
@@ -30,7 +30,7 @@ function Quiz() {
 
   return (
     <div className="Quiz">
-      <h2>{Questions[currQuestion].prompt}</h2>
+      <div className="question"> <h2>{Questions[currQuestion].prompt}</h2></div>
       <div className="options">
         <button
           style={getButtonStyle("A")}
