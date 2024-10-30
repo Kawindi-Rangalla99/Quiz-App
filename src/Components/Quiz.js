@@ -12,23 +12,50 @@ function Quiz() {
       setScore(score + 1);
     }
     setCurrQuestion(currQuestion + 1);
+    setOptionChosen(""); // Reset chosen option for the next question
   };
 
   const finishQuiz = () => {
     if (Questions[currQuestion].answer === optionChosen) {
       setScore(score + 1);
     }
-    setGameState("endscreen"); // Corrected gameState
+    setGameState("endscreen");
+  };
+
+  const getButtonStyle = (option) => {
+    return option === optionChosen
+      ? { backgroundColor: "rgb(190, 92, 27)", color: "white" }
+      : {};
   };
 
   return (
     <div className="Quiz">
-      <h1>{Questions[currQuestion].prompt}</h1>
+      <h2>{Questions[currQuestion].prompt}</h2>
       <div className="options">
-        <button onClick={() => setOptionChosen("A")}>{Questions[currQuestion].optionA}</button>
-        <button onClick={() => setOptionChosen("B")}>{Questions[currQuestion].optionB}</button>
-        <button onClick={() => setOptionChosen("C")}>{Questions[currQuestion].optionC}</button>
-        <button onClick={() => setOptionChosen("D")}>{Questions[currQuestion].optionD}</button>
+        <button
+          style={getButtonStyle("A")}
+          onClick={() => setOptionChosen("A")}
+        >
+          {Questions[currQuestion].optionA}
+        </button>
+        <button
+          style={getButtonStyle("B")}
+          onClick={() => setOptionChosen("B")}
+        >
+          {Questions[currQuestion].optionB}
+        </button>
+        <button
+          style={getButtonStyle("C")}
+          onClick={() => setOptionChosen("C")}
+        >
+          {Questions[currQuestion].optionC}
+        </button>
+        <button
+          style={getButtonStyle("D")}
+          onClick={() => setOptionChosen("D")}
+        >
+          {Questions[currQuestion].optionD}
+        </button>
       </div>
 
       {currQuestion === Questions.length - 1 ? (

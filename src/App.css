@@ -6,6 +6,10 @@
   flex-direction: column;
 }
 
+h2 {
+  align-items: center;
+}
+
 .Menu ,
 .Quiz ,
 .EndScreen {
