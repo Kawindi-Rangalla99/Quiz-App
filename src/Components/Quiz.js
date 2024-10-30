@@ -32,7 +32,7 @@ function Quiz() {
     <div className="Quiz">
       <div className="question"> <h2>{Questions[currQuestion].prompt}</h2></div>
       <div className="options">
-        <button
+        <button 
           style={getButtonStyle("A")}
           onClick={() => setOptionChosen("A")}
         >
@@ -59,9 +59,13 @@ function Quiz() {
       </div>
 
       {currQuestion === Questions.length - 1 ? (
+        <div className="finish">
         <button onClick={finishQuiz}>Finish Quiz</button>
+        </div>
       ) : (
+        <div className="next">
         <button onClick={nextQuestion}>Next Question</button>
+        </div>
       )}
     </div>
   );

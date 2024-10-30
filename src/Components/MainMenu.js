@@ -12,7 +12,7 @@ export default function MainMenu() {
             setGameState("quiz");
         }}
         >
-            Start Quiz
+            Get Ready! 🚀
         </button>
     </div>
   );
