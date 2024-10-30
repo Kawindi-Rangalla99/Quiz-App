@@ -13,7 +13,7 @@ function EndScreen() {
 
   return (
     <div className="EndScreen">
-        <h1>Congratulations! 🎉</h1>
+        <h1>Congratulations!</h1>
       <h2>{score} / {Questions.length}</h2>
       <button className='restart' onClick={restartQuiz}>Restart Quiz</button>
     </div>

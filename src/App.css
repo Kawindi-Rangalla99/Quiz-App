@@ -6,8 +6,36 @@
   flex-direction: column;
 }
 
-.Menu ,
-.Quiz ,
+.Quiz {
+  width: 600px;
+  height: 550px;
+  border-radius: 10px;
+  background-color: rgb(224, 180, 113);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("assesst/quiz.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 900px;
+}
+
+.Menu {
+  width: 500px;
+  height: 550px;
+  border-radius: 10px;
+  background-color: rgb(224, 180, 113);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("assesst/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 900px;
+}
+
 .EndScreen {
   width: 500px;
   height: 550px;
@@ -17,6 +45,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("assesst/cong.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 500px;
 }
 
 .Menu button {
@@ -31,13 +63,14 @@
 }
 
 .EndScreen button {
-  width: 300px;
-  height: 50px;
-  margin: 5px;
+  width: 150px;
+  height: 30px;
+  margin-top: 110px;
   border: none;
   border-radius: 5px;
   font-size: 20px;
   cursor: pointer;
+  background-color:rgb(178, 140, 80);
 }
 
 .Quiz button{
@@ -79,7 +112,7 @@ button:hover {
 .Menu,
 .Quiz,
 .EndScreen {
-  color:black;
+  color:rgb(246, 199, 166);
 }
 
 .options {
